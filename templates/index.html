@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .counter-header{
+            width:fit-content;
+            padding: 10px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="bg-warning text-dark text-center my-4 counter-header">Counter</h1>
+        <p class="text-center my-4">{{session['count_num']}} time(s)</p>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="/increase" class="btn btn-dark">Click</a>
+            </div>
+            <div class="col-auto">
+                <a href="/destroy_session" class="btn btn-light">Reset</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
